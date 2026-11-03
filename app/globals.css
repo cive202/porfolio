@@ -12,3 +12,13 @@
 @media(max-width:900px){.nav-links{display:none}.hero-grid{grid-template-columns:1fr}.hero-visual{height:420px;order:-1;margin-top:30px}.hero-copy{padding-bottom:60px}.hero-bottom{display:none}.section{padding:90px 6vw}.project-card{grid-template-columns:45px 1fr}.experience-card,.about-grid,.research-grid{grid-template-columns:1fr;gap:35px}.model-intro{grid-template-columns:1fr}.model-grid{grid-template-columns:1fr 1fr}.education-card{grid-template-columns:1fr}.education-year{text-align:left}.footer-main{flex-direction:column}.footer-links{align-self:flex-start}.metric-row{gap:22px}}
 @media(max-width:560px){.hero-shell{padding:20px 6vw}.hero-grid{min-height:auto;padding-top:65px}.hero-visual{height:330px}.orbit-one{width:270px}.orbit-two{height:300px}.node{width:72px;height:72px}.node-main{width:105px;height:105px}.node-a{left:0}.node-b{right:0}.node-c{right:4%;bottom:4%}.hero-lede{font-size:15px}.metric-row{margin-top:42px}.metric strong{font-size:22px}.metric span{font-size:8px}.project-card{padding:40px 0}.project-number{font-size:9px}.project-topline{flex-direction:column;gap:8px}.model-grid{grid-template-columns:1fr}.dataset-strip{flex-wrap:wrap}.dataset-strip span:last-child{margin-left:0}.footer-main{padding:80px 6vw}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+.gh-middle{display:flex;flex-direction:column;gap:28px;margin:28px 0}
+.gh-heat{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;gap:4px}
+.gh-heat i{aspect-ratio:1;border-radius:2px;background:#1a1e29;animation:ghfade .6s both}
+.gh-heat .h1{background:#2b3a14}.gh-heat .h2{background:#587a15}.gh-heat .h3{background:#8fb91a}.gh-heat .h4{background:var(--acid);box-shadow:0 0 8px rgba(201,243,29,.45)}
+.gh-stats{display:flex;gap:32px}
+.gh-stats div{display:flex;flex-direction:column;gap:4px}
+.gh-stats strong{font:500 28px var(--font-fraunces);color:#fff}
+.gh-stats span{font:9px var(--font-jbmono);letter-spacing:.1em;color:#777c89}
+@keyframes ghfade{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}

@@ -14,11 +14,6 @@ export default function Hero() {
             <a className="button button-primary" href="#work">Explore my work <span>↓</span></a>
             <a className="button button-ghost" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
-          <div className="metric-row">
-            {metrics.slice(0, 3).map((m) => (
-              <div className="metric" key={m.label}><strong>{m.value}</strong><span>{m.label}</span></div>
-            ))}
-          </div>
         </div>
 
         <div className="hero-visual" aria-label="AI systems architecture illustration">

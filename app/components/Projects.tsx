@@ -4,7 +4,7 @@ import SectionHead from "./SectionHead";
 export default function Projects() {
   return (
     <section id="work" className="section work-section">
-      <SectionHead title="Selected work" idx="01" kicker="WORK" />
+      <SectionHead title="Projects" idx="01" kicker="WORK" />
       <div className="project-list">
         {projects.map((project, i) => (
           <article className={`project-card ${i === 0 ? "project-featured" : ""}`} key={project.title}>

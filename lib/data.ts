@@ -6,7 +6,6 @@ export const profile = {
     "AI/ML engineer working across LLM fine-tuning, retrieval-augmented generation, and agentic systems — from QLoRA training runs to production voice pipelines.",
   location: "Kalanki, Kathmandu",
   email: "utsav10paneru@gmail.com",
-  phone: "9761662351",
   github: "https://github.com/cive202",
   huggingface: "https://huggingface.co/cive202",
 };
@@ -54,6 +53,26 @@ export const experience = [
 ];
 
 export const projects = [
+{
+  title: "AI-Powered Investor Intelligence Platform",
+  stat: "Deployed on Azure",
+  description:
+    "A production-oriented AI-powered financial document intelligence platform that uses Retrieval-Augmented Generation (RAG) to analyze company financial reports. Features PDF ingestion, OCR with Tesseract, semantic search using Azure AI Search, financial KPI extraction using Azure OpenAI, and PostgreSQL storage.",
+  stack: [
+    "Python",
+    "FastAPI",
+    "React",
+    "Azure OpenAI",
+    "Azure AI Search",
+    "PostgreSQL",
+    "Docker",
+    "Kubernetes (AKS)"
+  ],
+  links: {
+    github: "https://github.com/cive202/investor-platform",
+    demo: "http://investor-assistant.duckdns.org/",
+  },
+  },
   {
     title: "SettleAI — Nepali Voice Assistant",
     stat: "~16× faster TTS",
@@ -78,17 +97,6 @@ export const projects = [
       paper: "https://arxiv.org/abs/2604.11687",
     },
   },
-  {
-    title: "RAG-Based AI Teaching Assistant",
-    stat: "deployed on Render",
-    description:
-      "A retrieval-augmented question-answering system for semantic search over lecture transcripts, built with Cohere embeddings and containerized for deployment.",
-    stack: ["Python", "Flask", "Cohere embeddings", "Docker"],
-    links: {
-      github: "https://github.com/cive202/ragbased_ai",
-      demo: "https://ragbased-ai-1.onrender.com/",
-    },
-  },
 ];
 
 export const education = {
@@ -101,20 +109,17 @@ export const education = {
 // SettleAI, the style-transfer research, and ragbased_ai are linked directly
 // from their Projects cards above, so this grid covers the rest.
 export const githubRepos = [
+
   {
-    name: "Self_driving_car",
-    fullName: "Self_driving_car",
-    description: "A self-driving car simulation project.",
-    language: "JavaScript",
-    stars: 8,
+  name: "Please_Make_It_Sound_Human",
+  fullName: "Please Make It Sound Human: Encoder-Decoder vs Decoder-Only Transformers",
+  description: "An NLP research project comparing BART encoder-decoder models with Mistral 7B decoder-only Transformers for AI-to-human text style transfer. Built a 25,140-pair dataset and evaluation framework to measure semantic preservation, fluency, lexical similarity, and human-like writing patterns.",
+  language: "Python",
+  stars: 1,
+  links: {
+    github: "https://github.com/cive202/Please-Make-It-Sound-Human-Encoder-Decoder-vs-Decoder-Only-Transformers-for-AI-Style-Transfer-Texts"
   },
-  {
-    name: "Detecting_Parkinsons_Disease",
-    fullName: "Detecting_Parkinsons_Disease",
-    description: "Machine learning model for detecting Parkinson's disease from clinical data.",
-    language: "Jupyter Notebook",
-    stars: null as number | null,
-  },
+},
 ];
 
 export const githubStats = {
